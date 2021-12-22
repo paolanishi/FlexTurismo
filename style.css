@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+div img {
+    width: 100%;
+    display: block;
+}
+
+.flex-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    max-width: 992px;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    color: #f2f2f2;
+    align-items: center;
+    background-color: #122a57;
+}
+
+header nav .list-items {
+    width: 100%;
+    display: flex;
+    max-width: 260px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .list-items li a {
+    color: #f2f2f2;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+.apresentation {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentation .text-apresentation {
+    min-height: 200px;
+}
+
+.text-apresentation h2 {
+    font-size: 48px;
+    color: #122a57;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 220px;
+    height: 50px;
+    display: block;
+    color: #f2f2f2;
+    margin-top: 10px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #122a57;
+}
+
+.btn:hover {
+    background-color: #1a3b79;
+}
+
+.list-items li a:hover {
+    color: #dbd7d7;
+}
+
+#quem-somos {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#quem-somos h3 {
+    display: flex;
+    font-size: 32px;
+    color: #122a57;
+    margin-bottom: 20px;
+}
+
+#quem-somos h3::before {
+    width: 5px;
+    content: "";
+    height: 50px;
+    margin-right: 5px;
+    position: relative;
+    background-color: #122a57;
+}
+
+#quem-somos p {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#quem-somos img {
+    min-width: 420px;
+}
+
+.outer-container {
+    width: 100%;
+    background-color: #122a57;
+}
+
+#services {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+}
+
+#services h4 {
+    font-size: 32px;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list .services-item {
+    text-align: center;
+}
+
+.services-item a {
+    width: 220px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #122a57;
+    margin-top: 20px;
+    padding: 5px 10px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #f2f2f2;
+}
+
+.services-item  p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f2f2f2;
+    margin-top: 20px;
+}
+
+.services-item img {
+    width: 80%;
+    margin: auto;
+}
+
+.services-item a:hover {
+    background-color: #dbd7d7;
+}
+
+#plans {
+    padding-top: 50px;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#plans h5 {
+    font-size: 32px;
+}
+
+.lists-of-plans {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.plan-items {
+    flex: 1;
+    padding: 10px;
+    max-width: 240px;
+    margin-right: 20px;
+    border: 5px solid #122a57;
+}
+
+.plan-items .btn {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.plan-items h6 {
+    display: flex;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.plan-items h6::after {
+    width: 100%;
+    content: "";
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #122a57;
+}
+
+.plan-items ul {
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.plan-items ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.plan-items ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    line-height: 5px;
+    margin-right: 5px;
+    background-color: #122a57;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #122a57;
+}
+
+footer .footer {
+    color: #f2f2f2;
+    justify-content: space-between;
+}
+
+footer .footer p a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+footer .footer p a:hover {
+    color: #dbd7d7;
+}
+
+/* Mobile */
+
+@media(max-width: 992px){
+
+    header .menu {
+        padding: 20px;
+        
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .apresentation {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .apresentation div img {
+        width: 70%;
+        margin: auto;
+    }
+
+    .apresentation .text-apresentation {
+        width: 80%;
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos h3 {
+        margin: auto;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    #quem-somos h3::before {
+        display: none;
+    }
+
+    #quem-somos p {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #quem-somos img {
+        width: 80%;
+        margin: auto;
+        min-width: 320px;
+        margin-top: 30px;
+    }
+
+    #services {
+        padding-bottom: 20px;
+    }
+
+    #services h4 {
+        margin: auto;
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .services-item {
+        margin-bottom: 30px;
+    }
+
+    .services-item img {
+        width: auto;
+        margin: auto;
+    }
+
+    #plans h5 {
+        margin: auto;
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .lists-of-plans {
+        margin: auto;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lists-of-plans .plan-items {
+        width: 100%;
+        margin: auto;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        margin: auto;
+    }
+}
